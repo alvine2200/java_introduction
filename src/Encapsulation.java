@@ -18,6 +18,18 @@ class Animal
     public String getName() {
         return name;
     }
+
+    //declare constructor
+    public Animal()
+    {
+        //
+    }
+
+    public Animal(String name,int age)
+    {
+        this.age=age;
+        this.name=name;
+    }
 }
 public class Encapsulation {
 
