@@ -39,4 +39,6 @@ public class Loop {
         double multiplication=num1*num2;
         return (int) multiplication;
     }
+
+    
 }
