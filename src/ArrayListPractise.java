@@ -1,6 +1,7 @@
 import java.util.ArrayList;
-import java.util.Collection;
 import java.util.Collections;
+import java.util.HashMap;
+import java.util.LinkedList;
 
 public class ArrayListPractise {
     public static void main(String[] args) {
@@ -33,6 +34,8 @@ public class ArrayListPractise {
         System.out.println("Array Integer List Begins");
 
         arrayIntegerList();
+        linkedListsPractise();
+        citiesCountryNames();
     }
 
 
@@ -58,6 +61,40 @@ public class ArrayListPractise {
         {
             System.out.println(myNumbers.get(number));
         }
+    }
+
+    static void linkedListsPractise()
+    {
+        LinkedList<String> names=new LinkedList<String>();
+        names.addFirst("Heidi");
+        names.add("Graciese");
+        names.addLast("Llavu");
+
+        for(String name : names)
+        {
+            System.out.println(name);
+        }
+
+        System.out.println("\n");
+        System.out.println(names.getFirst());
+
+    }
+
+    static void citiesCountryNames()
+    {
+        HashMap<String,String> citiesNames=new HashMap<String,String>();
+        citiesNames.put("Kenya","Nairobi");
+        citiesNames.put("Rwanda","Kigali");
+        citiesNames.put("Uganda","Kampala");
+
+        System.out.println("\n");
+
+        for(String city: citiesNames.values())
+        {
+            System.out.println(city);
+        }
+
+        citiesNames.get("Kenya");
     }
 
 }
