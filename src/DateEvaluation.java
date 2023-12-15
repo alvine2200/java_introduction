@@ -11,7 +11,7 @@ public class DateEvaluation {
         System.out.println(date);
 
         //formatted in a controller no methods involved
-        DateTimeFormatter formatValue=DateTimeFormatter.ofPattern("dd-mm-yy hh:mm:ss");
+        DateTimeFormatter formatValue=DateTimeFormatter.ofPattern("E, MMM dd yyyy");
         LocalDateTime dateTimeNow=LocalDateTime.now();
         String newDateTime=dateTimeNow.format(formatValue);
         System.out.println("DateTime in Controller : "+" "+newDateTime);
