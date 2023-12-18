@@ -36,6 +36,10 @@ public class ArrayListPractise {
         arrayIntegerList();
         linkedListsPractise();
         citiesCountryNames();
+
+        Integer num=100;
+        String string=num.toString();
+        System.out.println(string.length());
     }
 
 
